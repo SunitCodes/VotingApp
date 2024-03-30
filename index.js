@@ -12,8 +12,8 @@ app.get('/',function(req,res){
 })
 
 
-
-
+const UserRoute = require('./routes/UserRoute');
+app.use('/user', UserRoute);
 
 
 const PORT = process.env.PORT || 3000; 

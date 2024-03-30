@@ -9,8 +9,8 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    addharNumber: {
-        type: String,
+    aadharNumber: {
+        type: Number,
         required: true,
         unique: true
     },

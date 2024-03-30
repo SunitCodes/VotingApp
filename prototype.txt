@@ -2,7 +2,16 @@
     "name" : "Sunit Das",
     "password" : "20082004",
     "aadharNumber" : 346277573311,
+    "age" : 20,
     "address" : "Bora, Singur, Hooghly",
     "email" : "abcd@gmail.com",
-    "role" : "voter"
+    "role" : "voter",
 }
+
+
+PROGRESS : 
+
+1. /signup - working
+2. JWT Token generation - working
+3. Password Hashing - pending
+4. 
