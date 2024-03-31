@@ -1,17 +1,20 @@
 {
-    "name" : "Sunit Das",
-    "password" : "20082004",
-    "aadharNumber" : 346277573311,
-    "age" : 20,
-    "address" : "Bora, Singur, Hooghly",
-    "email" : "abcd@gmail.com",
-    "role" : "voter",
+    "name" : "Aegon Targaryean",
+    "password" : "Jon Snow",
+    "aadharNumber" : 346277558941,
+    "age" : 28,
+    "address" : "Winterfell",
+    "email" : "ghost@gmail.com",
+    "role" : "voter"
 }
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MDk3MWJhMjkyNWQ5MDIzODhjZjhiZCIsImlhdCI6MTcxMTg5NDk3MH0.KvibhqYDJ_5ziUT6G1BjakadxkErLRarzcHwS8E_p6U"
 
 
 PROGRESS : 
 
 1. /signup - working
 2. JWT Token generation - working
-3. Password Hashing - pending
-4. 
+3. Password Hashing - working
+4. LocalAuthMiddleware - not working
+5. /login - pending
+

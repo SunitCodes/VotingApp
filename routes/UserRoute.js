@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+
 const userRoute = require('../models/user');
 const {jsonAuthMiddleware, generateToken} = require('./../jwt');
 
@@ -14,8 +15,6 @@ router.post('/signup', async function (req, res) {
         const payload = {
             id : response.id
         }
-
-
 
         //generate token
         const token = generateToken(payload);
