@@ -51,6 +51,9 @@ router.post('/login', async function (req, res) {
 
         //find the user in database and check if password matches
         const user = await userRoute.findOne({aadharNumber : aadharNumber})
+        
+        if(user) console.log('YES')
+        else console.log('NO')
 
         if(!user || !(await user.comparePassword(password))){
             return res.status(401).json({ message : "Invalid username or password"})
@@ -71,5 +74,9 @@ router.post('/login', async function (req, res) {
         res.status(500).json({ error: "Internal Error Occured", err });
     }
 })
+
+
+//
+
 
 module.exports = router;

@@ -10,6 +10,17 @@
 "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MDk3MWJhMjkyNWQ5MDIzODhjZjhiZCIsImlhdCI6MTcxMTg5NDk3MH0.KvibhqYDJ_5ziUT6G1BjakadxkErLRarzcHwS8E_p6U"
 
 
+{
+    "name" : "Arya Stark",
+    "password" : "12345",
+    "aadharNumber" : 111122223333,
+    "age" : 21,
+    "address" : "Winterfell",
+    "email" : "nymeria@gmail.com",
+    "role" : "voter"
+}
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MGMxYjczYjE4MTA0ZjQwNzkxY2IyYyIsImlhdCI6MTcxMjA2OTQ5MX0.B7Sw9kZkFZOGIvAKcwwgXsmp-LwM4KDrEqoTNAUDkE0"
+
 PROGRESS : 
 
 1. /signup - working
