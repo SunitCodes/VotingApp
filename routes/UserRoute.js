@@ -31,29 +31,15 @@ router.post('/signup', async function (req, res) {
     }
 })
 
-// router.get('/signup', async (req, res) => {
-//     try {
-//         const response = await userRoute.find();
-//         console.log("Data Fetched");
-//         res.status(200).json(response);
-        
-//     } catch (err) {
-//         console.log("Error occured");
-//         res.status(500).json({ error: "Internal Error Occured" });
-//     }
-// })
-
 
 // Login - POST
 router.post('/login', async function (req, res) {
     try{
-        const { aadharNumber, password } = req.body;
+        const { aadharNumber, password } = req.query;
 
         //find the user in database and check if password matches
         const user = await userRoute.findOne({aadharNumber : aadharNumber})
         
-        if(user) console.log('YES')
-        else console.log('NO')
 
         if(!user || !(await user.comparePassword(password))){
             return res.status(401).json({ message : "Invalid username or password"})
@@ -76,7 +62,23 @@ router.post('/login', async function (req, res) {
 })
 
 
-//
+// Profile -GET
+router.get('/profile', jsonAuthMiddleware, async function(req,res) {
+    try{
+        const userData = req.DecodedData;
+
+        const UserId = userData.id;
+
+        const UserDetails = await userRoute.findById(UserId);
+
+        console.log('User Details Fetched');
+        res.status(200).json({Profile : UserDetails});
+
+    }catch(err){
+        console.log("Couldn't fetch userData");
+        res.status(500).json({ error: "Internal Error Occured" });
+    }
+})
 
 
 module.exports = router;

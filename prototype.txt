@@ -20,12 +20,13 @@
     "role" : "voter"
 }
 "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MGMxYjczYjE4MTA0ZjQwNzkxY2IyYyIsImlhdCI6MTcxMjA2OTQ5MX0.B7Sw9kZkFZOGIvAKcwwgXsmp-LwM4KDrEqoTNAUDkE0"
+"updatedtoken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MGMxYjczYjE4MTA0ZjQwNzkxY2IyYyIsImlhdCI6MTcxMjA3MTg1OX0.5FnCfCs05d8gDGnL6rPQfarM7rZSvSV0CvVGgTsYC-w"
+
 
 PROGRESS : 
 
 1. /signup - working
 2. JWT Token generation - working
 3. Password Hashing - working
-4. LocalAuthMiddleware - not working
-5. /login - pending
-
+4. /login - working
+5. /profile - working
