@@ -30,3 +30,4 @@ PROGRESS :
 3. Password Hashing - working
 4. /login - working
 5. /profile - working
+

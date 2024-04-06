@@ -16,7 +16,11 @@ const CandidateSchema = new mongoose.Schema({
         enum: ["BJP","TMC","CONG","CPIM"]
     },
     votes: {
-        
+        user: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: user,
+            required: true
+        }
     },
     voteCount: {
         type: Number,

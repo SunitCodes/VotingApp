@@ -16,6 +16,10 @@ app.get('/',function(req,res){
 const UserRoute = require('./routes/UserRoute');
 app.use('/user', UserRoute);
 
+//Only accessible for admin
+const CandidateRoute = require('./routes/CandidateRoute');
+app.use('/candidate', CandidateRoute);
+
 
 const PORT = process.env.PORT || 3000; 
 
