@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const database = require('./database');
+const jsonAuthMiddleware = require('./jwt');
 
 
 const app = express();
@@ -18,7 +19,7 @@ app.use('/user', UserRoute);
 
 //Only accessible for admin
 const CandidateRoute = require('./routes/CandidateRoute');
-app.use('/candidate', CandidateRoute);
+app.use('/candidate',jsonAuthMiddleware, CandidateRoute);
 
 
 const PORT = process.env.PORT || 3000; 
