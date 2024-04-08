@@ -22,6 +22,28 @@
 "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MGMxYjczYjE4MTA0ZjQwNzkxY2IyYyIsImlhdCI6MTcxMjA2OTQ5MX0.B7Sw9kZkFZOGIvAKcwwgXsmp-LwM4KDrEqoTNAUDkE0"
 "updatedtoken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MGMxYjczYjE4MTA0ZjQwNzkxY2IyYyIsImlhdCI6MTcxMjA3MTg1OX0.5FnCfCs05d8gDGnL6rPQfarM7rZSvSV0CvVGgTsYC-w"
 
+{
+    "response": {
+        "name": "Eleven",
+        "password": "$2b$10$KRT8NjTxp1HKzcih2imETuljTmDg07TBCPuVv8HHY8laWDMy9911O",
+        "aadharNumber": 998877665544,
+        "age": 22,
+        "address": "Upside down",
+        "email": "el11@gmail.com",
+        "role": "admin",
+        "isVoted": false,
+        "_id": "6614060674fa702f08214efe",
+        "__v": 0
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MTQwNjA2NzRmYTcwMmYwODIxNGVmZSIsImlhdCI6MTcxMjU4ODI5NH0._rQbLsKY2DMpvTbFO4Y_NCsRtOgT2AjSOn8fcLZDQNk"
+}
+
+
+{
+    "name": "Narendra Modi",
+    "candidateID": "NMD24" ,
+    "party": "BJP"
+}
 
 PROGRESS : 
 
@@ -30,4 +52,5 @@ PROGRESS :
 3. Password Hashing - working
 4. /login - working
 5. /profile - working
-
+6. /candidate POST - working
+7. /vote - pending

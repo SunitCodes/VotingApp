@@ -17,9 +17,9 @@ const CandidateSchema = new mongoose.Schema({
     },
     votes: {
         user: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: user,
-            required: true
+            // type: mongoose.Schema.Types.ObjectId,
+            // ref: user,
+            // required: true
         }
     },
     voteCount: {
