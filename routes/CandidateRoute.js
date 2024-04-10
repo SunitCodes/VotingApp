@@ -42,18 +42,18 @@ router.post('/', jsonAuthMiddleware, async(req, res) =>{
 
 
 //Update Candidate
-router.put('/:candidate_id', async(req,res)=>{
+router.put('/:id', jsonAuthMiddleware, async(req,res)=>{
     try{
         if(!isAdmin(req.DecodedData.id)){
             return res.status(404).json({message: "Only accessible for admins"})
         }
 
-        const candidateID = req.params.id;
+        const id = req.params.id;
         const data = req.body; //data that is to be updated
 
-        const updatedData = await CandidateRoute.findByIdAndUpdate(candidateID,data,{
-            new: true ,//it ensures that the data updated is stored in updatedData
-            runValidators: true //Run mongoose validation
+        const updatedData = await CandidateRoute.findByIdAndUpdate(id,data,{
+            new: true ,
+            runValidators: true 
         });
 
         if(!updatedData){
@@ -71,15 +71,16 @@ router.put('/:candidate_id', async(req,res)=>{
 
 
 //Delete Candidate
-router.delete('/:candidate_id', async(req,res)=>{
+router.delete('/:id', jsonAuthMiddleware, async(req,res)=>{
     try{
         if(!isAdmin(req.DecodedData.id)){
             return res.status(404).json({message: "Only accessible for admins"})
         }
         
-        const candidateID = req.params.id;
+        const id = req.params.id;
+        console.log(id)
 
-        const deletedData = await CandidateRoute.findByIdAndDelete(candidateID);
+        const deletedData = await CandidateRoute.findByIdAndDelete(id);
 
         if(!deletedData){
             console.log("Deletion Failed");

@@ -52,5 +52,6 @@ PROGRESS :
 3. Password Hashing - working
 4. /login - working
 5. /profile - working
-6. /candidate POST - working
+6. /candidate (all) - working
 7. /vote - pending
+8. /votecount - pending
