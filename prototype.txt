@@ -1,3 +1,17 @@
+PROGRESS : 
+
+1. /signup - working
+2. JWT Token generation - working
+3. Password Hashing - working
+4. /login - working
+5. /profile - working
+6. /candidate (all) - working
+7. /vote - working
+8. /votecount - working
+
+
+
+
 {
     "name" : "Aegon Targaryean",
     "password" : "Jon Snow",
@@ -38,20 +52,24 @@
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MTQwNjA2NzRmYTcwMmYwODIxNGVmZSIsImlhdCI6MTcxMjU4ODI5NH0._rQbLsKY2DMpvTbFO4Y_NCsRtOgT2AjSOn8fcLZDQNk"
 }
 
+{
+    "response": {
+        "name": "Ned Stark",
+        "password": "$2b$10$BBjMtLCcMTrLfUNrBHzmcue9NPV8I0xWwrGpd.PbBy25D3PElIgh6",
+        "aadharNumber": 648877661122,
+        "age": 64,
+        "address": "Winterfell",
+        "email": "honour@gmail.com",
+        "role": "admin",
+        "isVoted": false,
+        "_id": "66178576ab715733a10096d3",
+        "__v": 0
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MTc4NTc2YWI3MTU3MzNhMTAwOTZkMyIsImlhdCI6MTcxMjgxNzUyNn0.DWyEySiMFhswd2RCnEirfzYuDz9TyxKRxfrWE5PdthA"
+}
 
 {
     "name": "Narendra Modi",
     "candidateID": "NMD24" ,
     "party": "BJP"
 }
-
-PROGRESS : 
-
-1. /signup - working
-2. JWT Token generation - working
-3. Password Hashing - working
-4. /login - working
-5. /profile - working
-6. /candidate (all) - working
-7. /vote - pending
-8. /votecount - pending
