@@ -6,12 +6,12 @@
 
 <h2>🧐 Features</h2>
 
-Secure voting system.
-User authentication and authorization.
-Creation and management of elections.
-Real-time vote counting and results.
-RESTful API for client applications.
-Comprehensive error handling.
+*  Secure voting system.
+*  User authentication and authorization.
+*  Creation and management of elections.
+*  Real-time vote counting and results.
+*  RESTful API for client applications.
+*  Comprehensive error handling.
 
   
 
@@ -19,11 +19,11 @@ Comprehensive error handling.
 
 Once the application is running, you can use the API to interact with the application. Here are some of the key endpoints:
 
-POST - /api/user/signup: Register a new user.
-POST - /api/user/login: Login a user.
-POST - /api/candidate: Create/Update/Delete a candidate (admin only).
-GET - /api/result: Retrieve number of votes.
-POST - /api/vote/candidateid: Cast a vote.
+*  POST - /api/user/signup: Register a new user.
+*  POST - /api/user/login: Login a user.
+*  POST - /api/candidate: Create/Update/Delete a candidate (admin only).
+*  GET - /api/result: Retrieve number of votes.
+*  POST - /api/vote/candidateid: Cast a vote.
 
 
   
